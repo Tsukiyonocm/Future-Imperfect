@@ -19,10 +19,52 @@ html {
     font-size: 62.5%;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: black;
+    line-height: 1.5;
+    font-size: 2rem;
+}
 
 
 /** Navigation
  ---------------------------------------------------------*/
-.logo-text {
-    background-color: red;
+.navbar {
+    background-color: aliceblue;
+}
+
+ .navbar li {
+    display: inline-block;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+ .logo-text {
+    background-color: aquamarine;
+    margin-left: 3rem;
+    border-right: 1px solid #ccc;
+}
+
+.right-nav {
+    background-color: chartreuse;
+}
+
+.search-icon {
+    height: 2rem;
+    width: 2rem;
+}
+
+.side-nav-icon {
+    height: 2.5rem;
+    width: 2.5rem;
 }
