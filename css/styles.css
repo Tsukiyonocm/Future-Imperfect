@@ -1,5 +1,10 @@
 /** Variables
  ---------------------------------------------------------*/
+:root {
+    --nav-border-light-grey: #E8E8E8;
+    --body-bg-grey: #F0F0F0;
+}
+
 
 /** Global Reset
  ---------------------------------------------------------*/
@@ -24,47 +29,75 @@ body {
     font-weight: 400;
     color: black;
     line-height: 1.5;
-    font-size: 2rem;
+    font-size: 1.4rem;
+    background-color: var(--body-bg-grey);
 }
 
 
 /** Navigation
  ---------------------------------------------------------*/
-.navbar {
-    background-color: aliceblue;
-}
-
- .navbar li {
-    display: inline-block;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    letter-spacing: .2rem;
-
-}
-
 .navigation {
+    height: 6.5rem;
+    border: 1px var(--nav-border-light-grey) solid;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start; 
+    align-items: center;
+    background-color: white;
+}
+
+.logo-text {
+    border-right: 1px var(--nav-border-light-grey) solid;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    width: 20%;
+    text-align: center;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 0 1 auto;
+    align-self: stretch;
+}
+
+.left-nav {
+    width: 70%;
+    display: flex;
+    flex: 0 1 auto;
+    align-self: stretch;
+    
+}
+
+.user-nav {    
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
+.nav-item {
+    margin: 0 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 300;
+    list-style: none;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .25rem;
 
- .logo-text {
-    background-color: aquamarine;
-    margin-left: 3rem;
-    border-right: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.nav-item:not(:last-child) {
+    padding-right: 2rem;
+    border-right: 1px var(--nav-border-light-grey) solid;
 }
 
 .right-nav {
-    background-color: chartreuse;
-}
-
-.search-icon {
-    height: 2rem;
-    width: 2rem;
-}
-
-.side-nav-icon {
-    height: 2.5rem;
-    width: 2.5rem;
+    background-color: bisque;
+    width: 10%;
+    flex: 0 1 auto;
+    align-self: stretch;
 }
